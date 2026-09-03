@@ -4,7 +4,8 @@
   "description": "It is a built-in Node.js module which allows developers to create web servers and web clients without installing any external package.",
   "main": "prg1.js",
   "scripts": {
-    "start": "node prg3.js"
+    "start": "node prg3.js",
+    "dev": "nodemon prg4.js"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Product Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f6fa;
+            color: #222;
+        }
+
+        /* Header */
+        header {
+            background: #111827;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        /* Product Section */
+        .product-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            display: flex;
+            gap: 50px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        /* Product Image */
+        .product-image {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f3f4f6;
+            border-radius: 15px;
+            padding: 40px;
+        }
+
+        .laptop {
+            width: 90%;
+            max-width: 500px;
+        }
+
+        /* Product Details */
+        .product-details {
+            width: 50%;
+        }
+
+        .product-details h2 {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .rating {
+            color: #f59e0b;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #888;
+            font-size: 18px;
+            margin-left: 10px;
+        }
+
+        .discount {
+            color: green;
+            font-weight: bold;
+        }
+
+        .description {
+            line-height: 1.6;
+            color: #555;
+            margin: 20px 0;
+        }
+
+        /* Specifications */
+        .specifications {
+            margin: 25px 0;
+        }
+
+        .specifications h3 {
+            margin-bottom: 12px;
+        }
+
+        .specifications p {
+            margin: 8px 0;
+        }
+
+        /* Buttons */
+        .quantity {
+            margin: 20px 0;
+        }
+
+        .quantity button {
+            padding: 8px 14px;
+            border: 1px solid #ccc;
+            background: white;
+            cursor: pointer;
+        }
+
+        .quantity span {
+            padding: 0 15px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .buttons button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .cart {
+            background: #f59e0b;
+            color: white;
+        }
+
+        .buy {
+            background: #2563eb;
+            color: white;
+        }
+
+        .buttons button:hover {
+            opacity: 0.85;
+        }
+
+        /* Features */
+        .features {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 30px;
+        }
+
+        .features h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .feature-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .feature {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            width: 220px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .feature h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Reviews */
+        .reviews {
+            max-width: 1200px;
+            margin: 30px auto 60px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .review {
+            border-bottom: 1px solid #ddd;
+            padding: 20px 0;
+        }
+
+        .review:last-child {
+            border-bottom: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 800px) {
+            .product-container {
+                flex-direction: column;
+            }
+
+            .product-image,
+            .product-details {
+                width: 100%;
+            }
+
+            .feature-container {
+                flex-wrap: wrap;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>TechStore</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Laptops</a>
+            <a href="#">Accessories</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- Product -->
+    <section class="product-container">
+
+        <div class="product-image">
+            <!-- Laptop visual -->
+            <svg class="laptop" viewBox="0 0 600 400">
+                <rect x="100" y="40" width="400" height="270"
+                      rx="15" fill="#222"/>
+                <rect x="120" y="60" width="360" height="230"
+                      fill="#60a5fa"/>
+                <circle cx="300" cy="175" r="45" fill="#93c5fd"/>
+                <path d="M50 320 L550 320 L590 350 L10 350 Z"
+                      fill="#555"/>
+                <rect x="250" y="325" width="100" height="10"
+                      rx="5" fill="#777"/>
+            </svg>
+        </div>
+
+
+        <div class="product-details">
+
+            <h2>UltraBook Pro 15</h2>
+
+            <div class="rating">
+                ★★★★★
+                <span style="color:#555;"> 4.8 (245 Reviews)</span>
+            </div>
+
+            <div class="price">
+                ₹69,999
+                <span class="old-price">₹84,999</span>
+            </div>
+
+            <span class="discount">17% OFF</span>
+
+            <p class="description">
+                Experience powerful performance and stunning visuals
+                with the UltraBook Pro 15. Perfect for students,
+                professionals, programming, gaming and everyday use.
+            </p>
+
+
+            <div class="specifications">
+                <h3>Specifications</h3>
+
+                <p><b>Processor:</b> Intel Core i7 13th Gen</p>
+                <p><b>RAM:</b> 16 GB DDR5</p>
+                <p><b>Storage:</b> 512 GB SSD</p>
+                <p><b>Display:</b> 15.6" Full HD</p>
+                <p><b>Graphics:</b> NVIDIA RTX 4050</p>
+                <p><b>Battery:</b> Up to 10 Hours</p>
+            </div>
+
+
+            <div class="quantity">
+                <b>Quantity:</b>
+
+                <button onclick="decrease()">−</button>
+
+                <span id="quantity">1</span>
+
+                <button onclick="increase()">+</button>
+            </div>
+
+
+            <div class="buttons">
+                <button class="cart" onclick="addCart()">
+                    Add to Cart
+                </button>
+
+                <button class="buy" onclick="buyNow()">
+                    Buy Now
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+    <section class="features">
+
+        <h2>Why Buy This Laptop?</h2>
+
+        <div class="feature-container">
+
+            <div class="feature">
+                <h3>⚡ Powerful</h3>
+                <p>Fast processor for smooth multitasking.</p>
+            </div>
+
+            <div class="feature">
+                <h3>💾 Fast SSD</h3>
+                <p>512GB SSD for quick boot and loading.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🎮 Gaming</h3>
+                <p>RTX graphics for gaming and creative work.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🔋 Long Battery</h3>
+                <p>Enjoy up to 10 hours of battery life.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Reviews -->
+    <section class="reviews">
+
+        <h2>Customer Reviews</h2>
+
+        <div class="review">
+            <h3>Rahul ⭐⭐⭐⭐⭐</h3>
+            <p>
+                Excellent laptop. Very fast and the display looks amazing.
+            </p>
+        </div>
+
+        <div class="review">
+            <h3>Aditya ⭐⭐⭐⭐⭐</h3>
+            <p>
+                Great performance for programming and gaming.
+            </p>
+        </div>
+
+        <div class="review">
+            <h3>Rohan ⭐⭐⭐⭐</h3>
+            <p>
+                Good laptop for the price. Battery backup is also decent.
+            </p>
+        </div>
+
+    </section>
+
+
+    <script>
+
+        let quantity = 1;
+
+        function increase() {
+            quantity++;
+            document.getElementById("quantity").innerText = quantity;
+        }
+
+        function decrease() {
+            if (quantity > 1) {
+                quantity--;
+                document.getElementById("quantity").innerText = quantity;
+            }
+        }
+
+        function addCart() {
+            alert(quantity + " laptop(s) added to cart!");
+        }
+
+        function buyNow() {
+            alert("Proceeding to checkout...");
+        }
+
+    </script>
+
+</body>
+</html>
