@@ -1,0 +1,8 @@
+import { EventEmitter } from 'events';
+const form = new EventEmitter();
+form.on("submit",(uname,password)=>{
+    console.log('form submitted');
+    console.log(`user name: ${uname}`);
+    console.log(`user submitted: ${password}`);
+});
+form.emit("submit","abc@abc.com","11222") 
