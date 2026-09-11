@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Product Enquiry</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fb;
+            color: #222;
+        }
+
+        /* Header */
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            color: #4f9cff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #4f9cff;
+        }
+
+        /* Main Section */
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: 50px auto;
+        }
+
+        .heading {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .heading h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .heading p {
+            color: #666;
+        }
+
+        .contact-box {
+            background: white;
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+        }
+
+        /* Contact Information */
+        .contact-info {
+            background: #111827;
+            color: white;
+            padding: 40px;
+        }
+
+        .contact-info h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .info {
+            margin-top: 30px;
+        }
+
+        .info h4 {
+            color: #4f9cff;
+            margin-bottom: 5px;
+        }
+
+        /* Form */
+        .form {
+            padding: 40px;
+        }
+
+        .form h2 {
+            margin-bottom: 25px;
+        }
+
+        .row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .input-group {
+            width: 100%;
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+            outline: none;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #4f9cff;
+        }
+
+        textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+            border: none;
+            border-radius: 6px;
+            background: #4f9cff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #2879d8;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background: #111827;
+            color: white;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            .contact-box {
+                grid-template-columns: 1fr;
+            }
+
+            .row {
+                flex-direction: column;
+                gap: 0;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .heading h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2>MyProduct</h2>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- Contact Section -->
+    <div class="container">
+
+        <div class="heading">
+            <h1>Contact Us</h1>
+            <p>Have a question about our product? Send us an enquiry.</p>
+        </div>
+
+        <div class="contact-box">
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+
+                <h2>Get In Touch</h2>
+
+                <p>
+                    Fill out the enquiry form and our team will get
+                    back to you as soon as possible.
+                </p>
+
+                <div class="info">
+                    <h4>📧 Email</h4>
+                    <p>support@myproduct.com</p>
+                </div>
+
+                <div class="info">
+                    <h4>📞 Phone</h4>
+                    <p>+91 98765 43210</p>
+                </div>
+
+                <div class="info">
+                    <h4>📍 Address</h4>
+                    <p>New Delhi, India</p>
+                </div>
+
+            </div>
+
+
+            <!-- Enquiry Form -->
+            <div class="form">
+
+                <h2>Product Enquiry</h2>
+
+                <form>
+
+                    <div class="row">
+
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input type="text"
+                                   placeholder="Enter your name"
+                                   required>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email"
+                                   placeholder="Enter your email"
+                                   required>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row">
+
+                        <div class="input-group">
+                            <label>Phone</label>
+                            <input type="tel"
+                                   placeholder="Enter phone number"
+                                   required>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Product</label>
+
+                            <select required>
+                                <option value="">Select Product</option>
+                                <option>Product A</option>
+                                <option>Product B</option>
+                                <option>Product C</option>
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+                        <label>Quantity</label>
+
+                        <input type="number"
+                               min="1"
+                               placeholder="Enter quantity">
+                    </div>
+
+
+                    <div class="input-group">
+                        <label>Your Enquiry</label>
+
+                        <textarea
+                            placeholder="Write your enquiry here..."
+                            required></textarea>
+                    </div>
+
+
+                    <button type="submit">
+                        Send Enquiry
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 MyProduct. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
