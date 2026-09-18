@@ -5,10 +5,9 @@ class OrderSystem extends EventEmitter {
   placeOrder(order) {
     console.log(`\n📦 Order received: #${order.id} for ${order.customerName}`);
 
-    // Simulate saving to database
+
     console.log("Saving order to database...");
 
-    // Emit event — everything below reacts independently
     this.emit("orderPlaced", order);
   }
 }
