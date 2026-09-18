@@ -15,9 +15,6 @@ function main() {
   setImmediate(f2);
   process.nextTick(f3);
 
-  // f1();
-
-//   f3();
   console.log("end");
 }
 
