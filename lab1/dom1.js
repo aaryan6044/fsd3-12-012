@@ -1,4 +1,4 @@
-// dom => document object model
+
 import { EventEmitter } from "events";
 // emiitter kaa kaam event generatte krna 
 const button = new EventEmitter();
