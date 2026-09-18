@@ -18,5 +18,3 @@ function main() {
 }
 
 main();
-
-// js is syncuronous  single threded
