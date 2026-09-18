@@ -10,8 +10,7 @@ const f3 = () => {
 
 function main() {
   console.log("main");
-  setTimeout(f1, 0); //another is await
-  //  setInterval(f1, 1000);
+  setTimeout(f1, 0); 
   setImmediate(f2);
   process.nextTick(f3);
 
