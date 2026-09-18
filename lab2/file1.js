@@ -1,5 +1,4 @@
-// import { writeFile,appendFile } from "fs/promises" ;
-// fs is file system
+
 
 // await writeFile("hello.txt","Js is very easy");
 // hr bar file banata hai  
