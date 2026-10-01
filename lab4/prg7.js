@@ -1,5 +1,5 @@
 import http from "http";
-import { addUser, getUsers } from "./users.js";
+import { getAlluser , getAlluser , updateUser , addUser , deleteUser}  from "./users.js";
 
 const server = http.createServer((req, res) => {
 
@@ -31,7 +31,7 @@ const server = http.createServer((req, res) => {
 
     res.writeHead(200, { "Content-Type": "application/json" });
 
-    res.end(JSON.stringify(users));
+    res.end(JSON.stringify(getAlluser));
 
   }
 
